@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- navigation bar -->
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand text-white">
+            用户A
+        </span>
+    </div>
+</nav>
+
+<!-- 主页面 -->
+<div class="container">
+    <!-- 业务部分 -->
+    <div class="d-flex justify-content-center flex-wrap">
+        <div class="p-2">
+            <div class="card" onclick="window.location.href='pages/voyage.html'">
+                <div class="card-body">
+                    <h2 class="card-text">航次信息</h2>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="card" onclick="window.location.href='pages/bill.html'">
+                <div class="card-body">
+                    <h2 class="card-text">单证信息</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 基本数据 -->
+    <div class="d-flex justify-content-center flex-wrap">
+        <div class="p-2">
+            <div class="card" onclick="window.location.href='pages/ship.html'">
+                <div class="card-body">
+                    <h2 class="card-text">船只管理</h2>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="card" onclick="window.location.href='pages/tenant.html'">
+                <div class="card-body">
+                    <h2 class="card-text">租家信息</h2>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="card" onclick="window.location.href='pages/port.html'">
+                <div class="card-body">
+                    <h2 class="card-text">港口信息</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内部数据 -->
+    <div class="d-flex justify-content-center flex-wrap">
+        <div class="p-2">
+            <div class="card" onclick="window.location.href='pages/user.html'">
+                <div class="card-body">
+                    <h2 class="card-text">用户信息</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

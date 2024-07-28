@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Tenant</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- navigation bar -->
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand text-white">
+            用户A
+        </span>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <nav aria-label="breadcrumb" class="px-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">主界面</a></li>
+            <li class="breadcrumb-item active"><a href="tenant.html">租家信息</a></li>
+            <li class="breadcrumb-item active" aria-current="page">添加租家</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="container">
+    <h1>添加租家</h1>
+
+    <div class="row mb-3">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <label for="tenantName" class="form-label float-end">租家名称:</label>
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control" id="tenantName">
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <label for="tenantEmail" class="form-label float-end">租家邮箱:</label>
+        </div>
+        <div class="col-4">
+            <input type="email" class="form-control" id="tenantEmail">
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <label for="principal" class="form-label float-end">负责人:</label>
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control" id="principal">
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <label for="principalEmail" class="form-label float-end">负责人邮箱:</label>
+        </div>
+        <div class="col-4">
+            <input type="email" class="form-control" id="principalEmail">
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6">
+            <div class="d-flex flex-wrap justify-content-center">
+                <button class="btn btn-outline-primary me-lg-2">添加</button>
+                <button class="btn btn-outline-secondary ms-lg-2">取消</button>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+</body>
+</html>

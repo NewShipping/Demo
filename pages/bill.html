@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- navigation bar -->
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand text-white">
+            用户A
+        </span>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">主界面</a></li>
+            <li class="breadcrumb-item active" aria-current="page">提单信息</li>
+        </ol>
+    </nav>
+</div>
+
+<!-- information panel -->
+<div class="container">
+    <div class="d-flex justify-content-center flex-wrap">
+        <div class="p-2">
+            <div class="card" onclick="window.location.href=''">
+                <div class="card-body">
+                    <h2 class="card-text">浏览订单</h2>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="card" onclick="window.location.href=''">
+                <div class="card-body">
+                    <h2 class="card-text">新订单</h2>
+                </div>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="card" onclick="window.location.href=''">
+                <div class="card-body">
+                    <h2 class="card-text">添加</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1>提单信息</h1>
+
+    <div class="d-flex flex-row-reverse px-0">
+        <div class="flex-row">
+            <button class="btn btn-outline-secondary" onclick="window.location.href='bill_add.html'">添加</button>
+        </div>
+    </div>
+
+    <table class="table table-bordered my-0">
+        <thead>
+        <tr>
+            <th style="width:10%"></th>
+            <th>提单号</th>
+            <th>租家名称</th>
+            <th>分配航次</th>
+            <th>提单填补进度</th>
+            <th style="width:15%"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <a class="btn btn-outline-info" data-bs-toggle="collapse" href="#detail1" role="button" aria-expanded="false" aria-controls="collapseExample">详细</a>
+            </td>
+            <td>HCMJT01</td>
+            <td>杭州热联</td>
+            <td>V.2407</td>
+            <td>阶段1</td>
+            <td>
+                <button class="btn btn-outline-primary">修改</button>
+                <button class="btn btn-outline-danger">删除</button>
+            </td>
+        </tr>
+        <tr id="detail1" class="collapse">
+            <td colspan="100">
+                <div class="row">
+                    <div class="col">
+                        <table class="table mb-0">
+                            <thead>
+                            <tr>
+                                <th>件数</th>
+                                <th>品名</th>
+                                <th>重量</th>
+                                <th>负责人</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>HOT ROLLED STEEL COILS</td>
+                                <td>100.0256</td>
+                                <td>负责人a</td>
+                                <td>
+                                    <button class="btn btn-outline-primary">修改</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <table class="table mb-0">
+                            <thead>
+                            <tr>
+                                <th>体积</th>
+                                <th>计费吨</th>
+                                <th>负责人</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>100.0256</td>
+                                <td>负责人b</td>
+                                <td>
+                                    <button class="btn btn-outline-primary">修改</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table mb-0">
+                        <thead>
+                        <tr>
+                            <th>船东绑扎</th>
+                            <th>绑扎公司</th>
+                            <th>绑扎单价</th>
+                            <th>应付绑扎</th>
+                            <th style="width:10%">负责人</th>
+                            <th style="width: 15%"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Y</td>
+                            <td>善水</td>
+                            <td>4</td>
+                            <td>100.0256</td>
+                            <td>负责人c</td>
+                            <td>
+                                <button class="btn btn-outline-primary">修改</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
